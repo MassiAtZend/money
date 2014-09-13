@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<package xmlns="http://www.zend.com/server/deployment-descriptor/1.0" version="1.0">
+  <type>library</type>
+    <name>Money</name>
+    <summary>Money Library</summary>
+    <description>Value Object that represents a monetary value (using a currency's smallest unit).</description>
+    <version>
+        <release>1.0.0</release>
+    </version>
+    <dependencies>
+    <required>
+      <php>
+        <min>5.3.3</min>
+      </php>
+      <extension>
+        <name>intl</name>
+        <min>*</min>
+      </extension>
+    </required>
+  </dependencies>
+    </package>
