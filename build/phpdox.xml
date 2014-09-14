@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <phpdox xmlns="http://phpdox.net/config">
- <project name="Money" source="../src" workdir="phpdox">
-  <collector publiconly="false">
-   <include mask="*.php" />
-   <exclude mask="*autoload.php" />
-  </collector>
-
-  <generator output=".">
-   <build engine="html" enabled="true" output="api">
-    <file extension="html" />
-   </build>
-  </generator>
- </project>
+	<project name="Money" source="../src" workdir="phpdox">
+		<collector publiconly="false">
+			<include mask="*.php" />
+			<exclude mask="*autoload.php" />
+		</collector>
+		<generator output=".">
+            <enrich base="logs">
+				<source type="phploc" />
+			</enrich>
+			<build engine="html" enabled="true" output="api">
+				<file extension="html" />
+			</build>
+		</generator>
+	</project>
 </phpdox>
 
