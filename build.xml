@@ -154,11 +154,11 @@
 	<target name="phpcb-ci" description="Aggregate tool output with PHP_CodeBrowser">
 		<exec executable="phpcb">
 			<arg value="--log" />
-			<arg path="${basedir}/build/logs" />
+			<arg path="${basedir}/build/logs/" />
 			<arg value="--source" />
-			<arg path="${basedir}/app" />
+			<arg path="${basedir}/src/" />
 			<arg value="--output" />
-			<arg path="${basedir}/build/code-browser" />
+			<arg path="${basedir}/build/code-browser/" />
 		</exec>
 	</target>
 </project>
